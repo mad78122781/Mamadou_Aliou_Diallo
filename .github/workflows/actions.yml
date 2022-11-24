@@ -31,13 +31,13 @@ jobs:
       - name: Run pandoc
         shell: bash
         run: |
-          chmod +x ./public/scripts/test.sh
+          chmod +x ./generate_pdf.sh
           ./generate_pdf.sh
 
       - name: Run Quarto
         shell: bash
         run: |
-          chmod +x ./public/scripts/test.sh
+          chmod +x ./generate_pdf.sh
           ./generate_pdf.sh
 
 
