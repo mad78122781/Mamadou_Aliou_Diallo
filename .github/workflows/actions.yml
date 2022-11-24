@@ -42,7 +42,10 @@ jobs:
 
 
       - name: Mv files to output folder
-        run: mv *.pdf output
+        shell: bash
+        run: |
+          for i in *.pdf; do mv ${i} output/; done
+
 
       - uses: actions/upload-artifact@v3
         with:
