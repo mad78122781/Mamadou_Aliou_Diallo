@@ -31,14 +31,14 @@ jobs:
       - name: Run pandoc
         shell: bash
         run: |
-          chmod +x ./generate_pdf.sh
-          ./generate_pdf.sh
+          chmod +x ./generate_pdf.bash
+          ./generate_pdf.bash
 
       - name: Run Quarto
         shell: bash
         run: |
-          chmod +x ./generate_pdf.sh
-          ./generate_pdf.sh
+          chmod +x ./generate_pdf.bash
+          ./generate_pdf.bash
 
 
       - name: Mv files to output folder
