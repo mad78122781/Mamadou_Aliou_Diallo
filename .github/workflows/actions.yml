@@ -41,14 +41,8 @@ jobs:
           ./generate_pdf.bash
 
 
-      - name: Mv files to output folder
-        shell: bash
-        run: |
-          for i in *.pdf; do mv ${i} output/; done
-
-
       - uses: actions/upload-artifact@v3
         with:
           name: pdf_output
           path: |
-            output/*.pdf
+            *.pdf
